@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZenFlow — Master Your Day</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="#" class="logo">ZenFlow<span></span></a>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#benefits">Beneficios</a></li>
+      <li><a href="#pricing">Precios</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#" class="btn btn-ghost">Iniciar sesión</a>
+      <a href="#" class="btn btn-primary">Comenzar gratis</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#features" onclick="toggleMenu()">Features</a>
+  <a href="#benefits" onclick="toggleMenu()">Beneficios</a>
+  <a href="#pricing" onclick="toggleMenu()">Precios</a>
+  <a href="#" class="btn btn-primary">Comenzar gratis</a>
+</div>
+
+<section id="hero">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-eyebrow">
+          <div class="line"></div>
+          <span>Tu sistema de enfoque definitivo</span>
+        </div>
+        <h1>
+          Domina tu día.<br/>
+          <span class="highlight">Sin rendirte.</span>
+        </h1>
+        <p class="hero-sub">
+          ZenFlow es la app de productividad que convierte el caos en poder.
+          Gestiona tareas, sincroniza tu calendario y alcanza tus metas —
+          con la disciplina de un shinobi.
+        </p>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary">Comenzar gratis ↗</a>
+          <a href="#features" class="btn btn-ghost">Ver funciones</a>
+        </div>
+        <div class="social-proof">
+          <div class="avatars">
+            <span>SK</span><span>RT</span><span>YN</span><span>GJ</span>
+          </div>
+          <span>+12,000 usuarios ya dominan su día</span>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="dashboard-mock">
+          <div class="mock-header">
+            <div class="mock-dots"><span></span><span></span><span></span></div>
+            <div class="mock-title">ZenFlow Dashboard</div>
+          </div>
+
+          <div class="mock-stat-row">
+            <div class="mock-stat">
+              <div class="val purple">87%</div>
+              <div class="lbl">Foco</div>
+            </div>
+            <div class="mock-stat">
+              <div class="val cyan">14</div>
+              <div class="lbl">Tareas</div>
+            </div>
+            <div class="mock-stat">
+              <div class="val gold">4h</div>
+              <div class="lbl">Deep Work</div>
+            </div>
+          </div>
+
+          <div class="mock-bar-title">Progreso semanal</div>
+          <div class="mock-bars">
+            <div class="mock-bar-row">
+              <span style="width:3ch">Lun</span>
+              <div class="mock-bar-track"><div class="mock-bar-fill" style="width:88%;background:linear-gradient(90deg,#7c3aed,#a855f7)"></div></div>
+              <span>88%</span>
+            </div>
+            <div class="mock-bar-row">
+              <span style="width:3ch">Mar</span>
+              <div class="mock-bar-track"><div class="mock-bar-fill" style="width:72%;background:linear-gradient(90deg,#0e7490,#22d3ee)"></div></div>
+              <span>72%</span>
+            </div>
+            <div class="mock-bar-row">
+              <span style="width:3ch">Mié</span>
+              <div class="mock-bar-track"><div class="mock-bar-fill" style="width:95%;background:linear-gradient(90deg,#7c3aed,#22d3ee)"></div></div>
+              <span>95%</span>
+            </div>
+          </div>
+
+          <div class="mock-tasks">
+            <div class="mock-task">
+              <span class="dot" style="background:#dc2626"></span>
+              Presentación de diseño Q3
+              <span class="mock-badge badge-high">Alta</span>
+            </div>
+            <div class="mock-task">
+              <span class="dot" style="background:#f59e0b"></span>
+              Revisar PRs del equipo
+              <span class="mock-badge badge-med">Media</span>
+            </div>
+            <div class="mock-task done">
+              <span class="dot" style="background:#22d3ee"></span>
+              Sync con stakeholders
+              <span class="mock-badge badge-low">✓</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="slash-divider"></div>
+
+<section id="features">
+  <div class="orb orb-f"></div>
+  <div class="container">
+    <div class="section-head">
+      <div class="tag">Funcionalidades</div>
+      <h2 class="section-title">Armas de alto rendimiento</h2>
+      <p class="section-sub">
+        Cada función está diseñada para eliminar la fricción y amplificar tu concentración.
+        Sin adornos. Solo resultados.
+      </p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon icon-purple">🗂️</div>
+        <h3>Gestor Inteligente de Tareas</h3>
+        <p>Captura, prioriza y ejecuta tareas con IA que aprende tu estilo de trabajo y sugiere el orden óptimo.</p>
+        <div class="slash">①</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-blood">⏱️</div>
+        <h3>Timer de Enfoque</h3>
+        <p>Técnica Pomodoro avanzada con sesiones adaptativas. Bloquea distracciones y entra en estado de flujo.</p>
+        <div class="slash">②</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-cyan">🗓️</div>
+        <h3>Sincronización de Calendarios</h3>
+        <p>Google, Outlook y Apple Calendar en un solo feed inteligente. Ve tu día como un estratega, no como un esclavo.</p>
+        <div class="slash">③</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon icon-gold">📈</div>
+        <h3>Analytics de Progreso</h3>
+        <p>Dashboards que revelan tus patrones de productividad. Saber cuándo eres más fuerte es la ventaja decisiva.</p>
+        <div class="slash">④</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="slash-divider"></div>
+
+<section id="benefits">
+  <div class="orb orb-b1"></div>
+  <div class="container">
+    <div class="benefits-grid">
+      <div>
+        <div class="tag">Beneficios</div>
+        <h2 class="section-title">¿Por qué ZenFlow?</h2>
+        <p class="section-sub" style="margin-bottom:2rem">
+          No es otra app de listas. Es un sistema de alto rendimiento construido para personas que no aceptan mediocridad.
+        </p>
+        <div class="benefits-list">
+          <div class="benefit-item">
+            <div class="benefit-num">01</div>
+            <div>
+              <h4>Elimina el estrés mental</h4>
+              <p>Externaliza toda la carga cognitiva al sistema. Tu mente queda libre para crear y resolver, no para recordar.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-num">02</div>
+            <div>
+              <h4>Recupera horas cada semana</h4>
+              <p>Usuarios reportan ahorrar 3-5 horas semanales al eliminar el overhead de gestión manual de tareas.</p>
+            </div>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-num">03</div>
+            <div>
+              <h4>Alcanza tus metas reales</h4>
+              <p>Sistema de objetivos con desglose automático. Conecta cada tarea con el propósito que te mueve a levantarte.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="benefits-visual">
+        <div class="ring-wrap">
+          <div class="ring">
+            <svg width="160" height="160" viewBox="0 0 160 160">
+              <circle cx="80" cy="80" r="66" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="12"/>
+              <circle cx="80" cy="80" r="66" fill="none"
+                stroke="url(#ringGrad)" stroke-width="12"
+                stroke-dasharray="414.7" stroke-dashoffset="66"
+                stroke-linecap="round"/>
+              <defs>
+                <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#7c3aed"/>
+                  <stop offset="100%" stop-color="#22d3ee"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="ring-label">
+              <div class="pct">84%</div>
+              <div class="sub">Productividad</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mini-stats">
+          <div class="mini-stat">
+            <div class="v">3.2×</div>
+            <div class="l">Más metas logradas</div>
+          </div>
+          <div class="mini-stat">
+            <div class="v" style="color:var(--cyan)">98%</div>
+            <div class="l">Satisfacción</div>
+          </div>
+          <div class="mini-stat">
+            <div class="v" style="color:var(--gold)">−47%</div>
+            <div class="l">Menos estrés</div>
+          </div>
+        </div>
+
+        <p style="font-size:.75rem;color:var(--muted);text-align:center;margin-top:.5rem">
+          Basado en encuesta a 2,400 usuarios activos · 2024
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="slash-divider"></div>
+
+<section id="pricing">
+  <div class="orb orb-pr"></div>
+  <div class="container">
+    <div class="section-head">
+      <div class="tag">Precios</div>
+      <h2 class="section-title">Elige tu camino</h2>
+      <p class="section-sub">
+        Empieza gratis. Escala cuando estés listo. Sin contratos ni sorpresas.
+      </p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card">
+        <div class="plan-name">Básico</div>
+        <div class="plan-price">
+          <span class="currency">$</span>
+          <span class="amount">0</span>
+          <span class="period">/ mes</span>
+        </div>
+        <p class="plan-desc">Perfecto para empezar tu journey de productividad.</p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li><span class="check">✦</span> Hasta 20 tareas activas</li>
+          <li><span class="check">✦</span> Timer de enfoque básico</li>
+          <li><span class="check">✦</span> 1 calendario sincronizado</li>
+          <li class="off"><span class="cross">✕</span> Analytics avanzados</li>
+          <li class="off"><span class="cross">✕</span> Integraciones premium</li>
+          <li class="off"><span class="cross">✕</span> Soporte prioritario</li>
+        </ul>
+        <button class="btn-plan btn-plan-ghost">Comenzar gratis</button>
+      </div>
+
+      <div class="price-card popular">
+        <div class="popular-badge">✦ Más popular</div>
+        <div class="plan-name">Pro</div>
+        <div class="plan-price">
+          <span class="currency">$</span>
+          <span class="amount" style="background:linear-gradient(135deg,var(--violet),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">10</span>
+          <span class="period">/ mes</span>
+        </div>
+        <p class="plan-desc">Para profesionales que exigen el máximo rendimiento.</p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li><span class="check">✦</span> Tareas ilimitadas</li>
+          <li><span class="check">✦</span> Timer avanzado + modos</li>
+          <li><span class="check">✦</span> Calendarios ilimitados</li>
+          <li><span class="check">✦</span> Analytics completos</li>
+          <li><span class="check">✦</span> 50+ integraciones</li>
+          <li class="off"><span class="cross">✕</span> Soporte prioritario 24/7</li>
+        </ul>
+        <button class="btn-plan btn-plan-primary">Comenzar — $10/mes</button>
+      </div>
+
+      <div class="price-card">
+        <div class="plan-name">Equipo</div>
+        <div class="plan-price">
+          <span class="currency">$</span>
+          <span class="amount">8</span>
+          <span class="period">/ usuario/mes</span>
+        </div>
+        <p class="plan-desc">Potencia a todo tu equipo con herramientas colaborativas.</p>
+        <div class="plan-divider"></div>
+        <ul class="plan-features">
+          <li><span class="check">✦</span> Todo lo de Pro</li>
+          <li><span class="check">✦</span> Workspace compartido</li>
+          <li><span class="check">✦</span> Asignación de tareas</li>
+          <li><span class="check">✦</span> Analytics del equipo</li>
+          <li><span class="check">✦</span> Integraciones ilimitadas</li>
+          <li><span class="check">✦</span> Soporte prioritario 24/7</li>
+        </ul>
+        <button class="btn-plan btn-plan-ghost">Contactar ventas</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">ZenFlow<span></span></a>
+        <p>El sistema de productividad para quienes eligen dominar cada día, no solo sobrevivir.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Producto</h5>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Precios</a></li>
+          <li><a href="#">Changelog</a></li>
+          <li><a href="#">Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Soporte</h5>
+        <ul>
+          <li><a href="#">Documentación</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Comunidad</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#">Privacidad</a></li>
+          <li><a href="#">Términos</a></li>
+          <li><a href="#">Cookies</a></li>
+          <li><a href="#">Seguridad</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2024 ZenFlow · Hecho con 集中 (enfoque)</span>
+      <div class="social-icons">
+        <a href="#">𝕏</a>
+        <a href="#">in</a>
+        <a href="#">▶</a>
+        <a href="#">◎</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
